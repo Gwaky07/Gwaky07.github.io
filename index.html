@@ -137,6 +137,8 @@
             box-shadow: var(--card-shadow);
             border: 1px solid rgba(79, 70, 229, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            cursor: pointer;
         }
         
         .news-item:hover {
@@ -170,6 +172,8 @@
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .tag {
@@ -199,6 +203,15 @@
         
         .tag-research {
             background: var(--accent-3);
+        }
+
+        .card-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
 
         .note {
@@ -266,9 +279,10 @@
             <h2>AI智能体与代理</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15996" class="news-title">
+                <a href="https://www.aibase.com/zh/news/15996" class="card-link" aria-label="AI代理Manus内测彻底颠覆传统助手角色"></a>
+                <h3 class="news-title">
                     AI代理Manus内测彻底颠覆传统助手角色
-                </a>
+                </h3>
                 <div class="news-content">
                     由Monica.im团队开发的Manus被誉为"首个通用AI代理"，能够独立思考、规划并执行复杂任务，直接交付完整成果。与传统AI助手不同，Manus可在虚拟环境中调用各种工具，如编程、搜索等，完成从市场调研到数据分析的多种任务。
                 </div>
@@ -280,9 +294,10 @@
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15995" class="news-title">
+                <a href="https://www.aibase.com/zh/news/15995" class="card-link" aria-label="OpenAI推出"博士级"AI代理，月费高达2万美元"></a>
+                <h3 class="news-title">
                     OpenAI推出"博士级"AI代理，月费高达2万美元
-                </a>
+                </h3>
                 <div class="news-content">
                     OpenAI计划推出一款"博士水平"的AI代理，定价为每月2万美元（约14.5万元人民币），旨在满足企业用户在金融、医疗和制造等数据密集型行业的高端需求。该AI代理将提供三种不同类型的服务，能够处理复杂的学术研究和软件开发难题。
                 </div>
@@ -298,9 +313,10 @@
             <h2>AI模型与技术突破</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15997" class="news-title">
+                <a href="https://www.aibase.com/zh/news/15997" class="card-link" aria-label="阿里开源全新推理模型通义千问QwQ-32B"></a>
+                <h3 class="news-title">
                     阿里开源全新推理模型通义千问QwQ-32B
-                </a>
+                </h3>
                 <div class="news-content">
                     阿里巴巴发布并全面开源通义千问QwQ-32B推理模型，该模型经过大规模强化学习，在数学运算、代码编写和通用AI能力上实现质的飞跃，性能可与DeepSeek-R1媲美。更重要的是，它大幅降低了部署和使用门槛，即使在消费级显卡上也能实现高性能运行。
                 </div>
@@ -312,9 +328,10 @@
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16010" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16010" class="card-link" aria-label="文本转语音系统Spark-TTS支持零样本语音克隆"></a>
+                <h3 class="news-title">
                     文本转语音系统Spark-TTS支持零样本语音克隆
-                </a>
+                </h3>
                 <div class="news-content">
                     Spark-TTS文本转语音系统引发AI社区广泛讨论，该系统以零样本语音克隆和细粒度语音控制能力脱颖而出。完全基于Qwen2.5构建，摒弃了传统需要额外生成模型的复杂流程，直接从LLM预测的代码中重建音频，展现了语音合成领域的重大突破。
                 </div>
@@ -330,9 +347,10 @@
             <h2>AI创意与设计应用</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15984" class="news-title">
+                <a href="https://www.aibase.com/zh/news/15984" class="card-link" aria-label="即梦AI推全新"动作模仿"功能"></a>
+                <h3 class="news-title">
                     即梦AI推全新"动作模仿"功能
-                </a>
+                </h3>
                 <div class="news-content">
                     即梦AI发布"动作模仿"功能，由字节跳动的智能创作数字人团队提供技术支持。用户只需上传一张人物图片和一条参考视频，即可生成动态视频，让图片中的人物模仿参考视频中的动作，并准确还原情绪。支持肖像、半身及全身等多种画幅类型，能同步还原不同画幅下的肢体动作和人脸表情。
                 </div>
@@ -344,9 +362,10 @@
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16008" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16008" class="card-link" aria-label="ChatGPT拒绝生成玫瑰图像引发网络热议"></a>
+                <h3 class="news-title">
                     ChatGPT拒绝生成玫瑰图像引发网络热议
-                </a>
+                </h3>
                 <div class="news-content">
                     ChatGPT的最新版本GPT-4o在尝试生成玫瑰花图像时拒绝服务，声称"无法生成这朵玫瑰的图像，因为它未能符合内容政策"。这一意外拒绝引起了广泛讨论，网友们尝试用中文、英文甚至特殊符号代替"玫瑰"，但均以失败告终，引发对AI内容政策的新一轮讨论。
                 </div>
@@ -362,9 +381,10 @@
             <h2>AI产品与平台更新</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16009" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16009" class="card-link" aria-label="豆包上线深度推理模式：AI逻辑链条可视化"></a>
+                <h3 class="news-title">
                     豆包上线深度推理模式：AI逻辑链条可视化
-                </a>
+                </h3>
                 <div class="news-content">
                     字节跳动为AI助手豆包推出"深度思考"推理模式，通过展示AI解决问题的完整逻辑链条，包括自我质疑、假设验证和错误修正等步骤，让用户能够更深入地了解AI的思考过程。这种可视化的思考方式提升了用户对AI的信任度，使AI反馈更具透明性和可解释性。
                 </div>
@@ -376,9 +396,10 @@
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16001" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16001" class="card-link" aria-label="通义App首发千问QwQ-32B智能体"></a>
+                <h3 class="news-title">
                     通义App首发千问QwQ-32B智能体
-                </a>
+                </h3>
                 <div class="news-content">
                     阿里AI To C业务旗下AI应用通义已接入最新开源推理模型通义千问QwQ-32B，目前在移动端与网页端均可体验。用户可通过"Qwen-QwQ-32B"智能体入口体验这一强大的推理模型，该模型在数学、代码及通用能力上实现质的飞跃，同时大幅降低了部署使用成本。
                 </div>
@@ -394,9 +415,10 @@
             <h2>AI硬件与基础设施</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16013" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16013" class="card-link" aria-label="全球首发：5G-A人形机器人"夸父"亮相MWC"></a>
+                <h3 class="news-title">
                     全球首发：5G-A人形机器人"夸父"亮相MWC
-                </a>
+                </h3>
                 <div class="news-content">
                     在世界移动通信大会（MWC2025）上，乐聚机器人联合中国移动和华为发布了全球首款搭载5G-A技术的人形机器人"夸父"，并获得西班牙国王费利佩六世的关注。"夸父"利用5G-A技术实现了大场景下的高精度定位，增强了多机协作的可靠性，并拓宽了工业场景适用范围。
                 </div>
@@ -408,9 +430,10 @@
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16015" class="news-title">
+                <a href="https://www.aibase.com/zh/news/16015" class="card-link" aria-label="星际迷航"黑科技照进现实！AI超声技术斩获百万美元大奖"></a>
+                <h3 class="news-title">
                     "星际迷航"黑科技照进现实！AI超声技术斩获百万美元大奖
-                </a>
+                </h3>
                 <div class="news-content">
                     洛杉矶公司iCardio.ai凭借颠覆性的超声人工智能技术，获得了罗丹贝瑞基金会颁发的100万美元奖金。该基金会由"星际迷航"创造者吉恩·罗丹贝瑞家族设立，旨在支持具有划时代意义的创新项目。iCardio.ai的技术有望重新定义心脏健康监测方式，让"生生不息，繁荣昌盛"的愿景在现实中实现。
                 </div>
