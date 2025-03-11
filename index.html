@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI创新日报 (2025.03.06)</title>
+    <title>AI创新日报 (2025.03.11)</title>
     <style>
         :root {
             /* 主色调 */
@@ -27,6 +27,17 @@
             /* 其他变量 */
             --border-radius: 16px;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            
+            /* 添加更多标签颜色 */
+            --tag-design: #ec4899;      /* 设计类 - 粉色 */
+            --tag-tech: #3b82f6;        /* 技术类 - 蓝色 */
+            --tag-ai: #7c3aed;          /* AI类 - 紫色 */
+            --tag-education: #06b6d4;   /* 教育类 - 青色 */
+            --tag-research: #f59e0b;    /* 研究类 - 橙色 */
+            --tag-security: #ef4444;    /* 安全类 - 红色 */
+            --tag-service: #10b981;     /* 服务类 - 绿色 */
+            --tag-innovation: #8b5cf6;  /* 创新类 - 淡紫色 */
+            --tag-policy: #64748b;      /* 政策类 - 灰色 */
         }
 
         body {
@@ -185,25 +196,15 @@
             font-weight: 500;
         }
         
-        .tag-education {
-            background: var(--accent-4);
-        }
-        
-        .tag-design {
-            background: var(--accent-1);
-        }
-        
-        .tag-ai {
-            background: var(--secondary-color);
-        }
-        
-        .tag-tech {
-            background: var(--accent-2);
-        }
-        
-        .tag-research {
-            background: var(--accent-3);
-        }
+        .tag-design { background: var(--tag-design); }
+        .tag-tech { background: var(--tag-tech); }
+        .tag-ai { background: var(--tag-ai); }
+        .tag-education { background: var(--tag-education); }
+        .tag-research { background: var(--tag-research); }
+        .tag-security { background: var(--tag-security); }
+        .tag-service { background: var(--tag-service); }
+        .tag-innovation { background: var(--tag-innovation); }
+        .tag-policy { background: var(--tag-policy); }
 
         .card-link {
             position: absolute;
@@ -272,181 +273,200 @@
     <div class="container">
         <header class="header">
             <h1 class="main-title">AI创新与应用日报</h1>
-            <p class="subtitle">人工智能前沿动态与突破 | 2025.03.06</p>
+            <p class="subtitle">人工智能前沿动态与突破 | 2025.03.11</p>
         </header>
 
         <section class="news-section">
-            <h2>AI智能体与代理</h2>
+            <h2>AI创意与设计技术</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15996" class="card-link" aria-label="AI代理Manus内测彻底颠覆传统助手角色"></a>
+                <a href="https://www.aibase.com/zh/news/16152" class="card-link" aria-label="TrajectoryCrafter视频技术突破"></a>
                 <h3 class="news-title">
-                    AI代理Manus内测彻底颠覆传统助手角色
+                    TrajectoryCrafter：AI视频创作革新技术重磅发布
                 </h3>
                 <div class="news-content">
-                    由Monica.im团队开发的Manus被誉为"首个通用AI代理"，能够独立思考、规划并执行复杂任务，直接交付完整成果。与传统AI助手不同，Manus可在虚拟环境中调用各种工具，如编程、搜索等，完成从市场调研到数据分析的多种任务。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">AI代理</span>
-                    <span class="tag tag-tech">自主执行</span>
-                    <span class="tag tag-design">创新应用</span>
-                </div>
-            </article>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15995" class="card-link" aria-label="OpenAI推出"博士级"AI代理，月费高达2万美元"></a>
-                <h3 class="news-title">
-                    OpenAI推出"博士级"AI代理，月费高达2万美元
-                </h3>
-                <div class="news-content">
-                    OpenAI计划推出一款"博士水平"的AI代理，定价为每月2万美元（约14.5万元人民币），旨在满足企业用户在金融、医疗和制造等数据密集型行业的高端需求。该AI代理将提供三种不同类型的服务，能够处理复杂的学术研究和软件开发难题。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">高端AI</span>
-                    <span class="tag tag-research">研究工具</span>
-                    <span class="tag tag-tech">企业应用</span>
-                </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI模型与技术突破</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15997" class="card-link" aria-label="阿里开源全新推理模型通义千问QwQ-32B"></a>
-                <h3 class="news-title">
-                    阿里开源全新推理模型通义千问QwQ-32B
-                </h3>
-                <div class="news-content">
-                    阿里巴巴发布并全面开源通义千问QwQ-32B推理模型，该模型经过大规模强化学习，在数学运算、代码编写和通用AI能力上实现质的飞跃，性能可与DeepSeek-R1媲美。更重要的是，它大幅降低了部署和使用门槛，即使在消费级显卡上也能实现高性能运行。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">大模型</span>
-                    <span class="tag tag-tech">开源技术</span>
-                    <span class="tag tag-education">教育应用</span>
-                </div>
-            </article>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16010" class="card-link" aria-label="文本转语音系统Spark-TTS支持零样本语音克隆"></a>
-                <h3 class="news-title">
-                    文本转语音系统Spark-TTS支持零样本语音克隆
-                </h3>
-                <div class="news-content">
-                    Spark-TTS文本转语音系统引发AI社区广泛讨论，该系统以零样本语音克隆和细粒度语音控制能力脱颖而出。完全基于Qwen2.5构建，摒弃了传统需要额外生成模型的复杂流程，直接从LLM预测的代码中重建音频，展现了语音合成领域的重大突破。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">语音合成</span>
-                    <span class="tag tag-tech">零样本学习</span>
-                    <span class="tag tag-design">创意工具</span>
-                </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI创意与设计应用</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/15984" class="card-link" aria-label="即梦AI推全新"动作模仿"功能"></a>
-                <h3 class="news-title">
-                    即梦AI推全新"动作模仿"功能
-                </h3>
-                <div class="news-content">
-                    即梦AI发布"动作模仿"功能，由字节跳动的智能创作数字人团队提供技术支持。用户只需上传一张人物图片和一条参考视频，即可生成动态视频，让图片中的人物模仿参考视频中的动作，并准确还原情绪。支持肖像、半身及全身等多种画幅类型，能同步还原不同画幅下的肢体动作和人脸表情。
+                    基于扩散模型的TrajectoryCrafter技术正式发布，实现从单一视角视频生成多视角画面的突破。该技术让创作者能在后期自由调整拍摄角度和运镜方式，为视频创作带来革命性变革，显著提升创作自由度和效率。
                 </div>
                 <div class="tags-container">
                     <span class="tag tag-design">视频创作</span>
-                    <span class="tag tag-ai">动作捕捉</span>
-                    <span class="tag tag-tech">数字人</span>
+                    <span class="tag tag-tech">AI视觉</span>
+                    <span class="tag tag-innovation">创新技术</span>
                 </div>
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16008" class="card-link" aria-label="ChatGPT拒绝生成玫瑰图像引发网络热议"></a>
+                <a href="https://www.aibase.com/zh/news/16145" class="card-link" aria-label="AI绘画市场格局大变"></a>
                 <h3 class="news-title">
-                    ChatGPT拒绝生成玫瑰图像引发网络热议
+                    AI绘画市场格局剧变：DALL-E份额骤降，新势力崛起
                 </h3>
                 <div class="news-content">
-                    ChatGPT的最新版本GPT-4o在尝试生成玫瑰花图像时拒绝服务，声称"无法生成这朵玫瑰的图像，因为它未能符合内容政策"。这一意外拒绝引起了广泛讨论，网友们尝试用中文、英文甚至特殊符号代替"玫瑰"，但均以失败告终，引发对AI内容政策的新一轮讨论。
+                    最新数据显示，AI图像生成市场正经历重大变革，DALL-E市占率下降80%，黑森林实验室等新兴力量快速崛起。这一变化反映了AI创意工具市场的激烈竞争态势，新技术迭代速度不断加快。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-ai">内容政策</span>
-                    <span class="tag tag-design">图像生成</span>
-                    <span class="tag tag-tech">AI限制</span>
-                </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI产品与平台更新</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16009" class="card-link" aria-label="豆包上线深度推理模式：AI逻辑链条可视化"></a>
-                <h3 class="news-title">
-                    豆包上线深度推理模式：AI逻辑链条可视化
-                </h3>
-                <div class="news-content">
-                    字节跳动为AI助手豆包推出"深度思考"推理模式，通过展示AI解决问题的完整逻辑链条，包括自我质疑、假设验证和错误修正等步骤，让用户能够更深入地了解AI的思考过程。这种可视化的思考方式提升了用户对AI的信任度，使AI反馈更具透明性和可解释性。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">推理技术</span>
-                    <span class="tag tag-education">学习工具</span>
-                    <span class="tag tag-tech">用户体验</span>
+                    <span class="tag tag-design">AI绘画</span>
+                    <span class="tag tag-tech">市场动态</span>
+                    <span class="tag tag-innovation">创新应用</span>
                 </div>
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16001" class="card-link" aria-label="通义App首发千问QwQ-32B智能体"></a>
+                <a href="https://www.aibase.com/zh/news/16074" class="card-link" aria-label="Runway发布新功能"></a>
                 <h3 class="news-title">
-                    通义App首发千问QwQ-32B智能体
+                    Runway视频创作新突破：首帧图片风格转换功能上线
                 </h3>
                 <div class="news-content">
-                    阿里AI To C业务旗下AI应用通义已接入最新开源推理模型通义千问QwQ-32B，目前在移动端与网页端均可体验。用户可通过"Qwen-QwQ-32B"智能体入口体验这一强大的推理模型，该模型在数学、代码及通用能力上实现质的飞跃，同时大幅降低了部署使用成本。
+                    Runway发布视频转视频的重要更新，新增首帧图片风格转换功能。这一功能让创作者能够更精确地控制视频风格，为视频创作提供了更多艺术表现的可能性。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-ai">智能体</span>
-                    <span class="tag tag-tech">移动应用</span>
-                    <span class="tag tag-education">学习辅助</span>
+                    <span class="tag tag-design">视频创作</span>
+                    <span class="tag tag-tech">风格转换</span>
+                    <span class="tag tag-innovation">创意工具</span>
                 </div>
             </article>
         </section>
 
         <section class="news-section">
-            <h2>AI硬件与基础设施</h2>
+            <h2>AI教育与语言技术</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16013" class="card-link" aria-label="全球首发：5G-A人形机器人"夸父"亮相MWC"></a>
+                <a href="https://www.aibase.com/zh/news/16146" class="card-link" aria-label="网易有道新一代翻译模型"></a>
                 <h3 class="news-title">
-                    全球首发：5G-A人形机器人"夸父"亮相MWC
+                    网易有道发布14B翻译大模型，教育应用更进一步
                 </h3>
                 <div class="news-content">
-                    在世界移动通信大会（MWC2025）上，乐聚机器人联合中国移动和华为发布了全球首款搭载5G-A技术的人形机器人"夸父"，并获得西班牙国王费利佩六世的关注。"夸父"利用5G-A技术实现了大场景下的高精度定位，增强了多机协作的可靠性，并拓宽了工业场景适用范围。
+                    网易有道最新发布的14B小参数翻译模型，基于子曰翻译大模型2.0开发，在保持高质量翻译效果的同时大幅降低资源消耗。这一突破使得AI翻译技术在教育场景的应用更加便捷高效。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">机器人</span>
-                    <span class="tag tag-ai">5G技术</span>
-                    <span class="tag tag-research">工业应用</span>
+                    <span class="tag tag-education">教育应用</span>
+                    <span class="tag tag-ai">语言模型</span>
+                    <span class="tag tag-service">教育服务</span>
                 </div>
             </article>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16015" class="card-link" aria-label="星际迷航"黑科技照进现实！AI超声技术斩获百万美元大奖"></a>
+                <a href="https://www.aibase.com/zh/news/16148" class="card-link" aria-label="苹果AI教育新突破"></a>
                 <h3 class="news-title">
-                    "星际迷航"黑科技照进现实！AI超声技术斩获百万美元大奖
+                    苹果AI教育本土化：iOS 18.4 Beta 3引入中文智能助手
                 </h3>
                 <div class="news-content">
-                    洛杉矶公司iCardio.ai凭借颠覆性的超声人工智能技术，获得了罗丹贝瑞基金会颁发的100万美元奖金。该基金会由"星际迷航"创造者吉恩·罗丹贝瑞家族设立，旨在支持具有划时代意义的创新项目。iCardio.ai的技术有望重新定义心脏健康监测方式，让"生生不息，繁荣昌盛"的愿景在现实中实现。
+                    苹果iOS 18.4 Beta 3版本正式支持中文版Apple Intelligence功能，并完成多国语言适配。这标志着苹果AI教育工具进入中文市场，将为中文用户带来更优质的学习体验。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">医疗科技</span>
-                    <span class="tag tag-ai">超声技术</span>
-                    <span class="tag tag-research">健康监测</span>
+                    <span class="tag tag-education">教育工具</span>
+                    <span class="tag tag-ai">智能助手</span>
+                    <span class="tag tag-service">本土化</span>
+                </div>
+            </article>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16150" class="card-link" aria-label="富士康AI推理模型"></a>
+                <h3 class="news-title">
+                    富士康发布FoxBrain：首款面向教育的AI推理大模型
+                </h3>
+                <div class="news-content">
+                    富士康推出首款AI推理大模型"FoxBrain"，基于Meta Llama3.1开发，专门优化了教育场景应用。该模型涵盖数据分析、数学运算、推理能力和代码生成等多项功能，计划开源以促进教育领域的技术创新。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-education">教育应用</span>
+                    <span class="tag tag-ai">推理模型</span>
+                    <span class="tag tag-research">开源技术</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI技术前沿</h2>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16151" class="card-link" aria-label="科大讯飞国产算力突破"></a>
+                <h3 class="news-title">
+                    科大讯飞国产算力突破：仅1万张算力卡跻身顶尖阵营
+                </h3>
+                <div class="news-content">
+                    科大讯飞凭借1万张910B国产算力卡，成功进入大模型研发第一梯队。这一成就展现了国产AI基础设施的突破性进展，为AI技术的自主创新树立新标杆。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-tech">算力创新</span>
+                    <span class="tag tag-ai">技术突破</span>
+                    <span class="tag tag-research">自主研发</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI产业创新</h2>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16153" class="card-link" aria-label="高通收购Edge Impulse"></a>
+                <h3 class="news-title">
+                    高通收购Edge Impulse，加速AI创新应用落地
+                </h3>
+                <div class="news-content">
+                    高通宣布收购Edge Impulse，旨在增强AI和物联网领域竞争力。此次收购将为开发者提供更强大的支持，推动AI技术在工业场景的创新应用，加速智能化转型进程。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-innovation">产业创新</span>
+                    <span class="tag tag-policy">政策支持</span>
+                    <span class="tag tag-research">发展规划</span>
+                </div>
+            </article>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16149" class="card-link" aria-label="广东AI新政"></a>
+                <h3 class="news-title">
+                    广东发布12项措施推动AI与机器人产业创新
+                </h3>
+                <div class="news-content">
+                    广东省出台新政策，推出12项具体措施支持AI与机器人产业发展。政策覆盖技术攻关、企业培育、应用场景等多个方面，单个重大项目最高可获1亿元以上省级配套资金支持。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-innovation">产业创新</span>
+                    <span class="tag tag-policy">政策支持</span>
+                    <span class="tag tag-research">发展规划</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI安全与基础设施</h2>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16147" class="card-link" aria-label="X平台遭受攻击"></a>
+                <h3 class="news-title">
+                    马斯克揭露X平台遭受大规模网络攻击
+                </h3>
+                <div class="news-content">
+                    社交媒体平台X遭遇严重宕机事件，马斯克证实这是由一次"规模巨大的网络攻击"导致。此事件引发对AI平台安全防护能力的广泛讨论，突显了AI系统安全建设的重要性。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-security">网络安全</span>
+                    <span class="tag tag-tech">平台防护</span>
+                    <span class="tag tag-research">安全研究</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI企业服务</h2>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16144" class="card-link" aria-label="亚马逊DeepSeek服务"></a>
+                <h3 class="news-title">
+                    亚马逊云科技推出DeepSeek-R1托管服务
+                </h3>
+                <div class="news-content">
+                    亚马逊云科技在Amazon Bedrock上推出DeepSeek-R1完全托管服务，简化企业AI部署流程。该服务提供全方位的企业级安全保障，包括数据加密、访问控制等功能。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-service">云服务</span>
+                    <span class="tag tag-ai">企业应用</span>
+                    <span class="tag tag-design">用户体验</span>
                 </div>
             </article>
         </section>
 
         <div class="note">
-            注：以上新闻均来源于AIbase，时间截至2025年3月6日。本日报特别关注AI智能体、创意应用与技术突破等领域的最新动态，为AI爱好者与从业者提供参考。
+            注：以上新闻均来源于AIbase，时间截至2025年3月11日。本日报特别关注AI创意设计、教育应用、产业创新与技术安全等领域的最新进展，为AI从业者与爱好者提供全面资讯。
         </div>
     </div>
 </body>
