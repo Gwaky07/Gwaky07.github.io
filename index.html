@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI创新日报 (2025.03.11)</title>
+    <title>AI创新日报 (2025.03.13)</title>
     <style>
         :root {
             /* 主色调 */
@@ -28,16 +28,13 @@
             --border-radius: 16px;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
             
-            /* 添加更多标签颜色 */
-            --tag-design: #ec4899;      /* 设计类 - 粉色 */
-            --tag-tech: #3b82f6;        /* 技术类 - 蓝色 */
-            --tag-ai: #7c3aed;          /* AI类 - 紫色 */
-            --tag-education: #06b6d4;   /* 教育类 - 青色 */
-            --tag-research: #f59e0b;    /* 研究类 - 橙色 */
-            --tag-security: #ef4444;    /* 安全类 - 红色 */
-            --tag-service: #10b981;     /* 服务类 - 绿色 */
-            --tag-innovation: #8b5cf6;  /* 创新类 - 淡紫色 */
-            --tag-policy: #64748b;      /* 政策类 - 灰色 */
+            /* 重新设计标签颜色 - 使用亮丽的纯色 */
+            --tag-tech: #00B4FF;       /* 科技蓝 - 技术类 */
+            --tag-performance: #00E5FF; /* 性能优化蓝 */
+            --tag-ai: #7C4DFF;         /* AI紫 - AI/模型类 */
+            --tag-innovation: #FF3366;  /* 创新粉 - 创新类 */
+            --tag-design: #FF4D94;     /* 设计粉 - 设计类 */
+            --tag-service: #00C853;    /* 服务绿 - 服务类 */
         }
 
         body {
@@ -182,29 +179,30 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            margin-top: 20px;
-            position: relative;
-            z-index: 2;
+            margin-top: 16px;
         }
 
         .tag {
-            padding: 8px 18px;
+            padding: 6px 20px;
             font-size: 0.95em;
             letter-spacing: 0.5px;
             border-radius: 20px;
             color: white;
             font-weight: 500;
+            transition: all 0.2s ease;
         }
         
-        .tag-design { background: var(--tag-design); }
-        .tag-tech { background: var(--tag-tech); }
-        .tag-ai { background: var(--tag-ai); }
-        .tag-education { background: var(--tag-education); }
-        .tag-research { background: var(--tag-research); }
-        .tag-security { background: var(--tag-security); }
-        .tag-service { background: var(--tag-service); }
-        .tag-innovation { background: var(--tag-innovation); }
-        .tag-policy { background: var(--tag-policy); }
+        .tag:hover {
+            opacity: 0.9;
+        }
+
+        /* 使用纯色背景 */
+        .tag-tech { background-color: var(--tag-tech); }
+        .tag-performance { background-color: var(--tag-performance); }
+        .tag-ai { background-color: var(--tag-ai); }
+        .tag-innovation { background-color: var(--tag-innovation); }
+        .tag-design { background-color: var(--tag-design); }
+        .tag-service { background-color: var(--tag-service); }
 
         .card-link {
             position: absolute;
@@ -273,200 +271,177 @@
     <div class="container">
         <header class="header">
             <h1 class="main-title">AI创新与应用日报</h1>
-            <p class="subtitle">人工智能前沿动态与突破 | 2025.03.11</p>
+            <p class="subtitle">人工智能前沿动态与突破 | 2025.03.13</p>
         </header>
 
         <section class="news-section">
-            <h2>AI创意与设计技术</h2>
+            <h2>AI视频创意与生成</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16152" class="card-link" aria-label="TrajectoryCrafter视频技术突破"></a>
+                <a href="https://www.aibase.com/zh/news/16259" class="card-link" aria-label="Open-Sora 2.0"></a>
                 <h3 class="news-title">
-                    TrajectoryCrafter：AI视频创作革新技术重磅发布
+                    潞晨科技推全新开源视频模型Open-Sora 2.0：平民化视频生成时代来临
                 </h3>
                 <div class="news-content">
-                    基于扩散模型的TrajectoryCrafter技术正式发布，实现从单一视角视频生成多视角画面的突破。该技术让创作者能在后期自由调整拍摄角度和运镜方式，为视频创作带来革命性变革，显著提升创作自由度和效率。
+                    潞晨科技推出110亿参数的开源视频生成模型Open-Sora 2.0，仅用20万美元（224张GPU）就完成训练。该模型性能媲美商业级水准，彻底颠覆了视频生成的"氪金"规则，为创作者带来更多可能。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-tech">视频生成</span>
+                    <span class="tag tag-ai">开源模型</span>
+                    <span class="tag tag-innovation">创新突破</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16249" class="card-link" aria-label="阿里VACE模型"></a>
+                <h3 class="news-title">
+                    阿里通义VACE：突破性视频编辑模型，精确控制运动轨迹
+                </h3>
+                <div class="news-content">
+                    阿里通义Wan团队推出All-in-One视频生成和编辑模型VACE，支持文本生成视频、精确控制物体运动轨迹等高级功能。用户通过文字描述即可实现专业级视频创作，大幅降低创作门槛。
                 </div>
                 <div class="tags-container">
                     <span class="tag tag-design">视频创作</span>
-                    <span class="tag tag-tech">AI视觉</span>
-                    <span class="tag tag-innovation">创新技术</span>
+                    <span class="tag tag-ai">生成模型</span>
+                    <span class="tag tag-tech">编辑工具</span>
                 </div>
             </article>
-            
+
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16145" class="card-link" aria-label="AI绘画市场格局大变"></a>
+                <a href="https://www.aibase.com/zh/news/16248" class="card-link" aria-label="字节跳动SeedFoley音效模型"></a>
                 <h3 class="news-title">
-                    AI绘画市场格局剧变：DALL-E份额骤降，新势力崛起
+                    字节跳动SeedFoley：AI音效生成模型重磅上线即梦平台
                 </h3>
                 <div class="news-content">
-                    最新数据显示，AI图像生成市场正经历重大变革，DALL-E市占率下降80%，黑森林实验室等新兴力量快速崛起。这一变化反映了AI创意工具市场的激烈竞争态势，新技术迭代速度不断加快。
+                    字节跳动发布AI音效生成模型SeedFoley，已在即梦平台正式上线。该模型能智能匹配专业级音效，一键为视频添加音效，让创作者轻松实现专业级声音效果，彻底解决视频配音难题。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-design">AI绘画</span>
-                    <span class="tag tag-tech">市场动态</span>
-                    <span class="tag tag-innovation">创新应用</span>
+                    <span class="tag tag-design">音效生成</span>
+                    <span class="tag tag-ai">创意工具</span>
+                    <span class="tag tag-service">视频制作</span>
                 </div>
             </article>
-            
+
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16074" class="card-link" aria-label="Runway发布新功能"></a>
+                <a href="https://www.aibase.com/zh/news/16245" class="card-link" aria-label="Remade AI特效工具"></a>
                 <h3 class="news-title">
-                    Runway视频创作新突破：首帧图片风格转换功能上线
+                    Remade AI开源8款Wan2.1特效LoRA，开启AI视频创作新纪元
                 </h3>
                 <div class="news-content">
-                    Runway发布视频转视频的重要更新，新增首帧图片风格转换功能。这一功能让创作者能够更精确地控制视频风格，为视频创作提供了更多艺术表现的可能性。
+                    Remade AI在Hugging Face平台发布8款基于Wan2.1模型的开源特效LoRA，包括"挤压"、"蛋糕化"、"膨胀"等创意效果。这些特效基于阿里巴巴的Wan2.1 14B I2V 480p模型开发，为创作者提供丰富的视觉效果选择。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-design">视频创作</span>
-                    <span class="tag tag-tech">风格转换</span>
-                    <span class="tag tag-innovation">创意工具</span>
+                    <span class="tag tag-design">特效工具</span>
+                    <span class="tag tag-tech">开源模型</span>
+                    <span class="tag tag-innovation">创意应用</span>
                 </div>
             </article>
         </section>
 
         <section class="news-section">
-            <h2>AI教育与语言技术</h2>
+            <h2>AI图像与多模态技术</h2>
             
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16146" class="card-link" aria-label="网易有道新一代翻译模型"></a>
+                <a href="https://www.aibase.com/zh/news/16243" class="card-link" aria-label="谷歌Gemini 2.0 Flash"></a>
                 <h3 class="news-title">
-                    网易有道发布14B翻译大模型，教育应用更进一步
+                    谷歌Gemini 2.0 Flash发布：集成原生图像生成能力
                 </h3>
                 <div class="news-content">
-                    网易有道最新发布的14B小参数翻译模型，基于子曰翻译大模型2.0开发，在保持高质量翻译效果的同时大幅降低资源消耗。这一突破使得AI翻译技术在教育场景的应用更加便捷高效。
+                    谷歌推出Gemini 2.0 Flash，首次实现原生图像生成功能。新模型支持多轮对话式实时编辑，直接集成图像生成能力，无需依赖外部扩散模型，大幅提升生成效果和交互体验。
                 </div>
                 <div class="tags-container">
+                    <span class="tag tag-ai">多模态</span>
+                    <span class="tag tag-tech">图像生成</span>
+                    <span class="tag tag-innovation">技术突破</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI技术创新</h2>
+            
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16244" class="card-link" aria-label="清华APBB框架"></a>
+                <h3 class="news-title">
+                    清华大学APBB框架突破性进展：长文本处理提速10倍
+                </h3>
+                <div class="news-content">
+                    清华大学推出APB序列并行推理框架，在处理超长文本时速度比Flash Attention快10倍。这一技术突破解决了大模型处理长文本的效率瓶颈，为AI教育和研究应用带来新机遇。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-tech">性能优化</span>
+                    <span class="tag tag-research">技术创新</span>
                     <span class="tag tag-education">教育应用</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/16247" class="card-link" aria-label="Nous Research API"></a>
+                <h3 class="news-title">
+                    Nous Research推出突破性API服务，打造无限制AI平台
+                </h3>
+                <div class="news-content">
+                    纽约AI团队Nous Research推出全新模型推理API，以"个性化、无限制"为特色。该服务为开发者和研究人员提供更灵活的语言模型接口，挑战OpenAI和Anthropic等主流AI服务商。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-tech">API服务</span>
                     <span class="tag tag-ai">语言模型</span>
-                    <span class="tag tag-service">教育服务</span>
-                </div>
-            </article>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16148" class="card-link" aria-label="苹果AI教育新突破"></a>
-                <h3 class="news-title">
-                    苹果AI教育本土化：iOS 18.4 Beta 3引入中文智能助手
-                </h3>
-                <div class="news-content">
-                    苹果iOS 18.4 Beta 3版本正式支持中文版Apple Intelligence功能，并完成多国语言适配。这标志着苹果AI教育工具进入中文市场，将为中文用户带来更优质的学习体验。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-education">教育工具</span>
-                    <span class="tag tag-ai">智能助手</span>
-                    <span class="tag tag-service">本土化</span>
-                </div>
-            </article>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16150" class="card-link" aria-label="富士康AI推理模型"></a>
-                <h3 class="news-title">
-                    富士康发布FoxBrain：首款面向教育的AI推理大模型
-                </h3>
-                <div class="news-content">
-                    富士康推出首款AI推理大模型"FoxBrain"，基于Meta Llama3.1开发，专门优化了教育场景应用。该模型涵盖数据分析、数学运算、推理能力和代码生成等多项功能，计划开源以促进教育领域的技术创新。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-education">教育应用</span>
-                    <span class="tag tag-ai">推理模型</span>
-                    <span class="tag tag-research">开源技术</span>
+                    <span class="tag tag-innovation">技术创新</span>
                 </div>
             </article>
         </section>
 
         <section class="news-section">
-            <h2>AI技术前沿</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16151" class="card-link" aria-label="科大讯飞国产算力突破"></a>
-                <h3 class="news-title">
-                    科大讯飞国产算力突破：仅1万张算力卡跻身顶尖阵营
-                </h3>
-                <div class="news-content">
-                    科大讯飞凭借1万张910B国产算力卡，成功进入大模型研发第一梯队。这一成就展现了国产AI基础设施的突破性进展，为AI技术的自主创新树立新标杆。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-tech">算力创新</span>
-                    <span class="tag tag-ai">技术突破</span>
-                    <span class="tag tag-research">自主研发</span>
-                </div>
-            </article>
-        </section>
+            <h2>AI企业与创新应用</h2>
 
-        <section class="news-section">
-            <h2>AI产业创新</h2>
-            
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16153" class="card-link" aria-label="高通收购Edge Impulse"></a>
+                <a href="https://www.aibase.com/zh/news/16246" class="card-link" aria-label="Netflix游戏部门变动"></a>
                 <h3 class="news-title">
-                    高通收购Edge Impulse，加速AI创新应用落地
+                    Netflix游戏部门AI战略生变：生成式AI副总裁离职
                 </h3>
                 <div class="news-content">
-                    高通宣布收购Edge Impulse，旨在增强AI和物联网领域竞争力。此次收购将为开发者提供更强大的支持，推动AI技术在工业场景的创新应用，加速智能化转型进程。
+                    Netflix游戏部门的生成式人工智能副总裁迈克・维尔杜确认离职。五个月前，Netflix将生成式人工智能作为游戏开发的核心战略。这一人事变动引发了对公司AI游戏开发战略的关注。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-innovation">产业创新</span>
-                    <span class="tag tag-policy">政策支持</span>
-                    <span class="tag tag-research">发展规划</span>
+                    <span class="tag tag-tech">游戏开发</span>
+                    <span class="tag tag-ai">生成式AI</span>
+                    <span class="tag tag-innovation">产业动态</span>
                 </div>
             </article>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16149" class="card-link" aria-label="广东AI新政"></a>
-                <h3 class="news-title">
-                    广东发布12项措施推动AI与机器人产业创新
-                </h3>
-                <div class="news-content">
-                    广东省出台新政策，推出12项具体措施支持AI与机器人产业发展。政策覆盖技术攻关、企业培育、应用场景等多个方面，单个重大项目最高可获1亿元以上省级配套资金支持。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-innovation">产业创新</span>
-                    <span class="tag tag-policy">政策支持</span>
-                    <span class="tag tag-research">发展规划</span>
-                </div>
-            </article>
-        </section>
 
-        <section class="news-section">
-            <h2>AI安全与基础设施</h2>
-            
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16147" class="card-link" aria-label="X平台遭受攻击"></a>
+                <a href="https://www.aibase.com/zh/news/16212" class="card-link" aria-label="Flower Labs云服务"></a>
                 <h3 class="news-title">
-                    马斯克揭露X平台遭受大规模网络攻击
+                    Flower Labs推出创新云本地AI服务：本地处理与云端无缝切换
                 </h3>
                 <div class="news-content">
-                    社交媒体平台X遭遇严重宕机事件，马斯克证实这是由一次"规模巨大的网络攻击"导致。此事件引发对AI平台安全防护能力的广泛讨论，突显了AI系统安全建设的重要性。
+                    Y Combinator支持的Flower Labs发布分布式云平台Flower Intelligence预览版。该平台支持设备本地AI处理与云端自动切换，Mozilla已采用该技术支持Thunderbird邮件客户端的Assist摘要插件。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-security">网络安全</span>
-                    <span class="tag tag-tech">平台防护</span>
-                    <span class="tag tag-research">安全研究</span>
+                    <span class="tag tag-tech">云计算</span>
+                    <span class="tag tag-service">分布式AI</span>
+                    <span class="tag tag-innovation">技术创新</span>
                 </div>
             </article>
-        </section>
 
-        <section class="news-section">
-            <h2>AI企业服务</h2>
-            
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/16144" class="card-link" aria-label="亚马逊DeepSeek服务"></a>
+                <a href="https://www.aibase.com/zh/news/16210" class="card-link" aria-label="LLMs.txt生成器升级"></a>
                 <h3 class="news-title">
-                    亚马逊云科技推出DeepSeek-R1托管服务
+                    LLMs.txt生成器v2发布：网站内容处理速度提升10倍
                 </h3>
                 <div class="news-content">
-                    亚马逊云科技在Amazon Bedrock上推出DeepSeek-R1完全托管服务，简化企业AI部署流程。该服务提供全方位的企业级安全保障，包括数据加密、访问控制等功能。
+                    LLMs.txt生成器推出v2版本，由@firecrawl_dev团队开发。新版本能将网站内容快速转化为AI模型可用的文本文件，处理速度较上一代提升10倍，为AI应用开发者提供更高效的数据处理工具。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-service">云服务</span>
-                    <span class="tag tag-ai">企业应用</span>
-                    <span class="tag tag-design">用户体验</span>
+                    <span class="tag tag-tech">效率工具</span>
+                    <span class="tag tag-ai">数据处理</span>
+                    <span class="tag tag-service">开发辅助</span>
                 </div>
             </article>
         </section>
 
         <div class="note">
-            注：以上新闻均来源于AIbase，时间截至2025年3月11日。本日报特别关注AI创意设计、教育应用、产业创新与技术安全等领域的最新进展，为AI从业者与爱好者提供全面资讯。
+            注：以上新闻均来源于AIbase，时间截至2025年3月13日。本日报特别关注AI创意设计、视频生成与技术创新等领域的最新进展，为AI从业者与爱好者提供及时资讯。
         </div>
     </div>
 </body>
