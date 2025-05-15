@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI创新日报 (2025.05.12)</title>
+    <title>AI创新日报 (2025.05.15)</title>
     <style>
         :root {
+            /* 主色调 */
             --primary-color: #4f46e5;
             --secondary-color: #7c3aed;
             --accent-1: #ec4899;
@@ -13,27 +14,32 @@
             --accent-3: #f59e0b;
             --accent-4: #3b82f6;
             
+            /* 背景色 */
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
             --bg-accent: #f1f5f9;
             
+            /* 文字颜色 */
             --text-primary: #1e293b;
             --text-secondary: #475569;
             --text-light: #94a3b8;
             
+            /* 其他变量 */
             --border-radius: 16px;
             --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
             
-            --tag-tech: #00B4FF;
-            --tag-performance: #00E5FF;
-            --tag-ai: #7C4DFF;
-            --tag-innovation: #FF3366;
-            --tag-design: #FF4D94;
-            --tag-service: #00C853;
-            --tag-edu: #FF6D00;
-            --tag-art: #FF1744;
-            --tag-style: #AA00FF;
-            --tag-policy: #00C853;
+            /* 重新设计标签颜色 - 使用亮丽的纯色 */
+            --tag-tech: #00B4FF;       /* 科技蓝 - 技术类 */
+            --tag-performance: #00E5FF; /* 性能优化蓝 */
+            --tag-ai: #7C4DFF;         /* AI紫 - AI/模型类 */
+            --tag-innovation: #FF3366;  /* 创新粉 - 创新类 */
+            --tag-design: #FF4D94;     /* 设计粉 - 设计类 */
+            --tag-service: #00C853;    /* 服务绿 - 服务类 */
+            --tag-edu: #FF6D00;        /* 教育橙 - 教育类 */
+            --tag-art: #FF1744;        /* 艺术红 - 艺术类 */
+            --tag-style: #AA00FF;      /* 风格紫 - 风格类 */
+            --tag-audio: #00E676;      /* 音频绿 - 音频类 */
+            --tag-video: #FF5722;      /* 视频橙 - 视频类 */
         }
 
         body {
@@ -184,7 +190,8 @@
         .tag-edu { background-color: var(--tag-edu); }
         .tag-art { background-color: var(--tag-art); }
         .tag-style { background-color: var(--tag-style); }
-        .tag-policy { background-color: var(--tag-policy); }
+        .tag-audio { background-color: var(--tag-audio); }
+        .tag-video { background-color: var(--tag-video); }
 
         .card-link {
             position: absolute;
@@ -252,168 +259,227 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="main-title">AI教育与设计创新日报</h1>
-            <p class="subtitle">聚焦AI教育与动画设计领域最新突破 | 2025.05.12</p>
+            <h1 class="main-title">AI创意与设计科技日报</h1>
+            <p class="subtitle">视觉生成与创意技术前沿动态 | 2025.05.15</p>
         </header>
 
         <section class="news-section">
-            <h2>AI动画与设计技术</h2>
+            <h2>AI视频与动画创新</h2>
+            
             <article class="news-item" style="border: 2px solid var(--accent-1); background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(236, 72, 153, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/17958" class="card-link" aria-label="腾讯发布多模态视频生成利器"></a>
-                <h3 class="news-title">【精选】高一致性、强控制力，腾讯发布多模态视频生成利器 HunyuanCustom</h3>
+                <a href="https://www.aibase.com/zh/news/18080" class="card-link" aria-label="Lightricks"></a>
+                <h3 class="news-title">
+                    【重磅】Lightricks发布LTX-Video-13B精炼模型：10秒生成高清AI视频
+                </h3>
                 <div class="news-content">
-                    腾讯正式开源全新多模态定制视频生成框架HunyuanCustom，主打"主体一致性"与"多模态灵活输入"，支持用户通过文本描述、单图或多图图像、参考音频甚至已有的视频片段作为输入，为内容创作提供极大灵活性。
+                    以色列科技公司Lightricks最新开源视频模型通过多尺度渲染技术和高效量化优化，将视频生成速度提升至10秒以内，同时保持高质量输出，标志着AI视频生成技术的重大突破。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-design">视频生成</span>
-                    <span class="tag tag-art">多模态技术</span>
+                    <span class="tag tag-video">视频生成</span>
+                    <span class="tag tag-ai">模型优化</span>
+                    <span class="tag tag-performance">高速渲染</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/18056" class="card-link" aria-label="PixVerse"></a>
+                <h3 class="news-title">
+                    PixVerse V4.5视频模型：20+电影镜头控制，5秒打造好莱坞大片
+                </h3>
+                <div class="news-content">
+                    PixVerse最新V4.5视频模型引入20多项电影级镜头控制和多图参考功能，支持动态平移、变焦、推拉镜头等多种专业级镜头运动，大幅提升视频生成的创作自由度与专业品质。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-video">专业控制</span>
+                    <span class="tag tag-design">电影效果</span>
                     <span class="tag tag-innovation">创意工具</span>
                 </div>
             </article>
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17959" class="card-link" aria-label="全球首款AI智能浏览器"></a>
-                <h3 class="news-title">全球首款AI智能浏览器Fellou发布：一键搞定研究、发帖、邮件，效率飙升5倍</h3>
-                <div class="news-content">
-                    Fellou正式发布，号称全球首款Agentic浏览器，不仅能搜索和浏览，还能思考、规划并执行复杂任务。其深度研究模式通过Deep Action技术，可在后台开启5个以上影子浏览器，并行搜索多个平台，为创意工作者提供前所未有的效率提升。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-design">创意工具</span>
-                    <span class="tag tag-ai">智能浏览</span>
-                    <span class="tag tag-innovation">效率提升</span>
-                </div>
-            </article>
+
             <article class="news-item" style="border: 2px solid var(--accent-2); background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(6, 182, 212, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/17953" class="card-link" aria-label="腾讯发布全新AI框架"></a>
-                <h3 class="news-title">【精选】腾讯发布全新AI框架PrimitiveAnything：颠覆3D形状生成方式</h3>
+                <a href="https://www.aibase.com/zh/news/18060" class="card-link" aria-label="阿里巴巴"></a>
+                <h3 class="news-title">
+                    【重磅】阿里巴巴开源全能视频大模型：统一生成与编辑功能
+                </h3>
                 <div class="news-content">
-                    腾讯AIPD与清华大学联合推出PrimitiveAnything框架，将形状抽象重新定义为原始组件生成任务，采用解码器式的变换网络，能够从单一图像或文本描述生成高质量的3D形状抽象，为3D设计与创作带来革命性突破。
+                    阿里巴巴正式推出通义万相Wan2.1-VACE，集文生视频、图像参考视频生成、视频重绘、局部编辑、背景延展和时长延展等多项功能于一体，其1.3B轻量版专为消费级显卡设计，极大降低视频创作门槛。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-design">3D设计</span>
-                    <span class="tag tag-art">形状生成</span>
-                    <span class="tag tag-innovation">创新框架</span>
-                </div>
-            </article>
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17954" class="card-link" aria-label="文档智能新突破"></a>
-                <h3 class="news-title">文档智能新突破：ContextGem开源工具上线，几行代码实现专业级文档解析</h3>
-                <div class="news-content">
-                    AI文档处理工具ContextGem正式亮相，作为完全免费、开源的大型语言模型框架，通过简洁代码实现复杂文档分析，用户只需通过自然语言描述所需信息，系统便能自动生成提示词、解析文档内容，并输出结构化数据。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-design">文档处理</span>
-                    <span class="tag tag-ai">智能解析</span>
-                    <span class="tag tag-tech">开源工具</span>
+                    <span class="tag tag-video">视频编辑</span>
+                    <span class="tag tag-ai">全能模型</span>
+                    <span class="tag tag-tech">开源技术</span>
                 </div>
             </article>
         </section>
 
         <section class="news-section">
-            <h2>AI教育与开发工具</h2>
+            <h2>AI音频与语音技术</h2>
+            
             <article class="news-item" style="border: 2px solid var(--secondary-color); background: linear-gradient(135deg, rgba(124, 58, 237, 0.05) 0%, rgba(124, 58, 237, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/17962" class="card-link" aria-label="字节跳动发布开源代码模型"></a>
-                <h3 class="news-title">【精选】字节跳动发布开源代码模型Seed-Coder，8B参数引领编程新风潮</h3>
+                <a href="https://www.aibase.com/zh/news/18084" class="card-link" aria-label="Stability AI"></a>
+                <h3 class="news-title">
+                    【精选】Stability AI开源341M超轻量文字转语音模型，手机本地运行
+                </h3>
                 <div class="news-content">
-                    字节跳动Seed团队正式推出全新开源代码模型Seed-Coder，以其卓越的代码生成、补全、编辑及推理能力引发业界广泛关注。作为一款8B参数规模的模型，在多个基准测试中超越同级别竞品，展现出强大的编程潜力和高效的数据处理设计。
+                    Stability AI携手ARM开源轻量级文字转音频模型Stable Audio Open Small，仅有3.41亿参数，专为移动设备优化，能在智能手机上本地运行，生成高质量音频样本仅需不到8秒。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-edu">编程教育</span>
-                    <span class="tag tag-ai">代码模型</span>
-                    <span class="tag tag-tech">开源工具</span>
+                    <span class="tag tag-audio">语音合成</span>
+                    <span class="tag tag-ai">轻量模型</span>
+                    <span class="tag tag-tech">移动AI</span>
                 </div>
             </article>
-            <article class="news-item" style="border: 2px solid var(--primary-color); background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(79, 70, 229, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/17956" class="card-link" aria-label="Cursor 0.50版本重磅更新"></a>
-                <h3 class="news-title">【精选】Cursor 0.50版本重磅更新，简化定价与增强AI编程体验</h3>
-                <div class="news-content">
-                    Cursor推出0.50版本重大更新，带来了简化的定价模式、全面升级的MAX模式以及一系列功能增强。新增跨文件代码建议、后台代理和多代码库支持等功能，进一步巩固了Cursor作为AI驱动代码编辑器的领先地位。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-edu">编程工具</span>
-                    <span class="tag tag-ai">AI编程</span>
-                    <span class="tag tag-tech">开发体验</span>
-                </div>
-            </article>
+
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17955" class="card-link" aria-label="MCP与创新悖论"></a>
-                <h3 class="news-title">MCP与创新悖论：开放标准为何能拯救AI</h3>
+                <a href="https://www.aibase.com/zh/news/18073" class="card-link" aria-label="微软"></a>
+                <h3 class="news-title">
+                    微软在Windows 11中测试"Hey，Copilot!"免提唤醒功能
+                </h3>
                 <div class="news-content">
-                    由Anthropic于2024年11月推出的模型上下文协议(MCP)，旨在规范AI应用程序与其训练数据之外的世界进行交互的方式。正如HTTP和REST为Web应用奠定了基础，MCP正在为AI模型与各种工具的连接建立统一的标准，催生增长的飞轮效应。
+                    微软正在Windows 11中推出全新免提语音唤醒功能，用户只需通过简单的"Hey，Copilot!"语音指令即可唤醒Copilot应用程序，目前已向部分Windows Insider用户推出测试版本。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-edu">技术标准</span>
-                    <span class="tag tag-ai">模型协议</span>
-                    <span class="tag tag-innovation">开放生态</span>
+                    <span class="tag tag-audio">语音交互</span>
+                    <span class="tag tag-service">用户体验</span>
+                    <span class="tag tag-tech">系统集成</span>
                 </div>
             </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI教育与研究工具</h2>
+            
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17957" class="card-link" aria-label="FDA宣布使用AI技术加速药品审批"></a>
-                <h3 class="news-title">FDA宣布使用AI技术加速药品审批流程</h3>
+                <a href="https://www.aibase.com/zh/news/18072" class="card-link" aria-label="通义千问"></a>
+                <h3 class="news-title">
+                    通义千问推出"深入研究"功能，助力科研高效进行
+                </h3>
                 <div class="news-content">
-                    美国食品药品监督管理局（FDA）宣布，将立即在其所有中心引入人工智能技术，以缩短药品审批时间。借助这项AI工具，科学家们可以减少大量重复性、单调的工作，显著提升审核效率，药品评估与研究中心副主任表示能将三天的工作缩短至几分钟完成。
+                    通义千问正式推出"深入研究"智能助理系统，能够快速生成条理清晰、数据可信的研究报告，通过多步骤搜索和分析处理复杂研究任务，显著缩短科研流程，为研究人员提供强大支持。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-edu">科研工具</span>
+                    <span class="tag tag-ai">智能分析</span>
+                    <span class="tag tag-service">学术辅助</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/18078" class="card-link" aria-label="美国教授AI事件"></a>
+                <h3 class="news-title">
+                    教育伦理争议：美国学生怒斥教授使用AI代笔，要求退学费
+                </h3>
+                <div class="news-content">
+                    美国东北大学一名学生发现商业教授使用ChatGPT生成讲义内容，而该教授曾明确禁止学生使用AI工具，这一事件引发了关于AI在教育领域使用标准、公平性和伦理界限的广泛讨论。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-edu">教育伦理</span>
+                    <span class="tag tag-ai">应用争议</span>
+                    <span class="tag tag-innovation">学术诚信</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/18071" class="card-link" aria-label="木兰模型"></a>
+                <h3 class="news-title">
+                    全球首个女性肿瘤AI大模型"木兰"上线，手机端免费服务
+                </h3>
+                <div class="news-content">
+                    华中科技大学发布全球首个女性肿瘤人工智能大模型"木兰"，基于近20年高质量病例数据和权威医疗指南，特别适合中国女性健康需求，解决女性肿瘤诊疗标准化问题，填补该领域空白。
                 </div>
                 <div class="tags-container">
                     <span class="tag tag-edu">医疗教育</span>
-                    <span class="tag tag-tech">审批技术</span>
-                    <span class="tag tag-innovation">效率提升</span>
+                    <span class="tag tag-ai">专业模型</span>
+                    <span class="tag tag-service">健康服务</span>
                 </div>
             </article>
         </section>
 
         <section class="news-section">
-            <h2>AI产业与技术动态</h2>
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17963" class="card-link" aria-label="清华系创业团队融资千万"></a>
-                <h3 class="news-title">清华系创业团队"灵御智能"融资千万，聚焦人机混合智能</h3>
+            <h2>三维建模与创意工具</h2>
+            
+            <article class="news-item" style="border: 2px solid var(--primary-color); background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(79, 70, 229, 0.01) 100%);">
+                <a href="https://www.aibase.com/zh/news/18069" class="card-link" aria-label="Step1X-3D"></a>
+                <h3 class="news-title">
+                    【精选】阶跃星辰开源3D大模型Step1X-3D：高保真三维内容生成
+                </h3>
                 <div class="news-content">
-                    国内具身智能初创企业"灵御智能"宣布完成千万级种子轮融资，由英诺天使基金领投。公司由清华大学自动化系校友金戈与团队联合创立，依托机器人运动控制领域的技术积累，构建了从人侧数据采集、机侧执行器到智能操作平台的通用解决方案。
+                    全新开源3D大模型Step1X-3D总参数量达4.8B，包含1.3B几何模块和3.5B纹理模块，凭借先进的3D原生架构，不仅追求视觉美感，更注重实用性与可控性，为3D内容创作提供强大技术引擎。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">具身智能</span>
-                    <span class="tag tag-ai">机器人技术</span>
-                    <span class="tag tag-innovation">产业投资</span>
+                    <span class="tag tag-design">3D建模</span>
+                    <span class="tag tag-ai">三维生成</span>
+                    <span class="tag tag-tech">开源模型</span>
                 </div>
             </article>
+
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17960" class="card-link" aria-label="OpenAI聘请新任应用业务负责人"></a>
-                <h3 class="news-title">OpenAI聘请前Facebook应用主管Simo为新任应用业务负责人</h3>
+                <a href="https://www.aibase.com/zh/news/18081" class="card-link" aria-label="Opera"></a>
+                <h3 class="news-title">
+                    Opera推出AI代理功能，重塑智能浏览体验
+                </h3>
                 <div class="news-content">
-                    OpenAI宣布聘请Instacart首席执行官以及前Facebook应用主管Fidji Simo担任公司新设立的应用业务负责人。CEO山姆・阿尔特曼表示，这一新角色的引入将使他能够将更多的时间和精力投入到研究、计算和安全等重要领域。
+                    来自挪威和中国的浏览器先锋Opera推出全新功能Browser Operator，这款基于AI代理的智能浏览体验能执行超出单一查询的复杂任务，为全球用户带来更智能的网络交互方式。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">人才动向</span>
-                    <span class="tag tag-ai">企业战略</span>
-                    <span class="tag tag-innovation">应用发展</span>
+                    <span class="tag tag-tech">智能浏览</span>
+                    <span class="tag tag-ai">智能代理</span>
+                    <span class="tag tag-service">创意工具</span>
                 </div>
             </article>
+        </section>
+
+        <section class="news-section">
+            <h2>AI技术前沿突破</h2>
+            
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17949" class="card-link" aria-label="OpenAI与微软正商讨修改合作条款"></a>
-                <h3 class="news-title">OpenAI与微软正商讨修改双方合作条款</h3>
+                <a href="https://www.aibase.com/zh/news/18067" class="card-link" aria-label="AlphaEvolve"></a>
+                <h3 class="news-title">
+                    谷歌DeepMind推出AlphaEvolve：AI首次打破数学56年纪录
+                </h3>
                 <div class="news-content">
-                    根据英国《金融时报》报道，OpenAI和微软正在商讨修改双方的合作条款，这一调整可能为ChatGPT的开发公司打开未来上市的大门，并确保微软能持续获取前沿的人工智能技术，微软考虑放弃部分股权以换取2030年后继续使用新模型的权利。
+                    谷歌DeepMind发布具备自我进化能力的人工智能代理AlphaEvolve，将Gemini大语言模型与进化式优化方法结合，已广泛应用于谷歌数据中心、芯片设计和AI训练中，取得数学研究重大突破。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">商业合作</span>
-                    <span class="tag tag-ai">战略调整</span>
-                    <span class="tag tag-innovation">产业格局</span>
+                    <span class="tag tag-ai">算法创新</span>
+                    <span class="tag tag-tech">科学突破</span>
+                    <span class="tag tag-innovation">自优化系统</span>
                 </div>
             </article>
+
             <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/17950" class="card-link" aria-label="自变量机器人再获美团数亿元融资"></a>
-                <h3 class="news-title">一年半融资七轮超10亿！自变量机器人再获美团数亿元A轮加码</h3>
+                <a href="https://www.aibase.com/zh/news/18066" class="card-link" aria-label="Meta CATransformers"></a>
+                <h3 class="news-title">
+                    Meta与佐治亚理工合作推出CATransformers框架，降低AI碳足迹
+                </h3>
                 <div class="news-content">
-                    成立不到一年半的具身智能公司「自变量机器人」近日完成数亿元A轮融资，由美团战投领投。本轮资金将主要用于加速其全自研端到端通用具身智能大模型与机器人本体的同步迭代，并推动未来在多个应用场景的智慧化方案落地。
+                    Meta的FAIR团队与佐治亚理工学院合作开发CATransformers框架，将碳排放作为AI系统设计的核心考量，通过联合优化模型架构和硬件性能，显著降低AI技术的环境代价。
                 </div>
                 <div class="tags-container">
-                    <span class="tag tag-tech">机器人技术</span>
-                    <span class="tag tag-ai">具身智能</span>
-                    <span class="tag tag-innovation">融资动态</span>
+                    <span class="tag tag-tech">绿色AI</span>
+                    <span class="tag tag-ai">可持续计算</span>
+                    <span class="tag tag-innovation">环保技术</span>
+                </div>
+            </article>
+
+            <article class="news-item">
+                <a href="https://www.aibase.com/zh/news/18062" class="card-link" aria-label="OpenAI"></a>
+                <h3 class="news-title">
+                    OpenAI升级ChatGPT：正式引入GPT-4.1，代码能力超强
+                </h3>
+                <div class="news-content">
+                    OpenAI正式发布GPT-4.1及GPT-4.1 Mini模型，特别优化了编码任务和指令执行能力，处理复杂编程需求表现出色，同时运行速度更快，成为日常编码场景的理想选择。
+                </div>
+                <div class="tags-container">
+                    <span class="tag tag-ai">模型升级</span>
+                    <span class="tag tag-tech">编程辅助</span>
+                    <span class="tag tag-performance">速度优化</span>
                 </div>
             </article>
         </section>
 
         <div class="note">
-            注：本日报精选2025年5月12日AI领域重要进展，特别聚焦AI教育工具与动画设计技术，为您提供教育科技与创意设计领域的最新动态。
+            注：本日报精选2025年5月15日AI领域重要进展，特别聚焦视觉生成、创意设计与教育工具，为您提供创意技术领域的最新动态。所有信息均来源于AIbase官方发布的最新资讯。
         </div>
     </div>
 
