@@ -1,538 +1,449 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI创新日报 (2025.07.21)</title>
+    <title>北京市养老保险缴费年限政策详解（2025-2039）</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            /* 主色调 */
-            --primary-color: #4f46e5;
-            --secondary-color: #7c3aed;
-            --accent-1: #ec4899;
-            --accent-2: #06b6d4;
-            --accent-3: #f59e0b;
-            --accent-4: #3b82f6;
-            
-            /* 背景色 */
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --bg-accent: #f1f5f9;
-            
-            /* 文字颜色 */
-            --text-primary: #1e293b;
-            --text-secondary: #475569;
-            --text-light: #94a3b8;
-            
-            /* 其他变量 */
-            --border-radius: 16px;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-            
-            /* 重新设计标签颜色 - 使用亮丽的纯色 */
-            --tag-tech: #00B4FF;       /* 科技蓝 - 技术类 */
-            --tag-performance: #00E5FF; /* 性能优化蓝 */
-            --tag-ai: #7C4DFF;         /* AI紫 - AI/模型类 */
-            --tag-innovation: #FF3366;  /* 创新粉 - 创新类 */
-            --tag-design: #FF4D94;     /* 设计粉 - 设计类 */
-            --tag-service: #00C853;    /* 服务绿 - 服务类 */
-            --tag-edu: #FF6D00;        /* 教育橙 - 教育类 */
-            --tag-art: #FF1744;        /* 艺术红 - 艺术类 */
-            --tag-style: #AA00FF;      /* 风格紫 - 风格类 */
-            --tag-audio: #00E676;      /* 音频绿 - 音频类 */
-            --tag-video: #FF5722;      /* 视频橙 - 视频类 */
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #f0f4ff 0%, #e5e9ff 100%);
-            color: var(--text-primary);
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px;
-            background: var(--bg-primary);
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: #e2e8f0;
+        }
+        .highlight-box {
             position: relative;
             overflow: hidden;
         }
-
-        .container::before {
+        .highlight-box::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, 
-                var(--primary-color), 
-                var(--secondary-color), 
-                var(--accent-1), 
-                var(--accent-2)
-            );
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding: 40px;
-            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-            border-radius: var(--border-radius);
-            position: relative;
-        }
-
-        .main-title {
-            font-size: 3.2em;
-            text-align: center;
-            margin: 0 0 20px;
-            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            font-weight: 800;
-            letter-spacing: 1px;
-        }
-
-        .subtitle {
-            font-size: 1.3em;
-            color: var(--text-secondary);
-            margin: 0;
-            font-weight: 500;
-        }
-
-        h2 {
-            font-size: 2em;
-            color: var(--primary-color);
-            margin: 60px 0 30px;
-            text-align: center;
-            padding: 15px 0;
-            position: relative;
-            font-weight: 700;
-            display: block;
-            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
-            border-radius: var(--border-radius);
-        }
-
-        .news-section {
-            margin-bottom: 60px;
-        }
-
-        .news-item {
-            background: white;
-            padding: 35px;
-            margin-bottom: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(79, 70, 229, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-            cursor: pointer;
-        }
-        
-        .news-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-
-        .news-title {
-            display: block;
-            font-size: 1.5em;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.4;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        .news-title:hover {
-            color: var(--secondary-color);
-        }
-
-        .news-content {
-            font-size: 1.15em;
-            line-height: 1.8;
-            margin-bottom: 25px;
-            color: var(--text-secondary);
-        }
-
-        .tags-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .tag {
-            padding: 6px 20px;
-            font-size: 0.95em;
-            letter-spacing: 0.5px;
-            border-radius: 20px;
-            color: white;
-            font-weight: 500;
-            transition: all 0.2s ease;
-        }
-        
-        .tag:hover {
-            opacity: 0.9;
-        }
-
-        .tag-tech { background-color: var(--tag-tech); }
-        .tag-performance { background-color: var(--tag-performance); }
-        .tag-ai { background-color: var(--tag-ai); }
-        .tag-innovation { background-color: var(--tag-innovation); }
-        .tag-design { background-color: var(--tag-design); }
-        .tag-service { background-color: var(--tag-service); }
-        .tag-edu { background-color: var(--tag-edu); }
-        .tag-art { background-color: var(--tag-art); }
-        .tag-style { background-color: var(--tag-style); }
-        .tag-audio { background-color: var(--tag-audio); }
-        .tag-video { background-color: var(--tag-video); }
-
-        .card-link {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+            width: 4px;
             height: 100%;
-            z-index: 1;
-        }
-
-        .note {
-            margin-top: 60px;
-            padding: 30px;
-            background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
-            border-radius: var(--border-radius);
-            color: var(--text-secondary);
-            text-align: center;
-            font-size: 1.1em;
-            border: 1px solid rgba(79, 70, 229, 0.2);
-            position: relative;
-        }
-
-        .note::before {
-            content: '📌';
-            font-size: 1.5em;
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            padding: 0 10px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .container {
-                padding: 20px;
-            }
-
-            .header {
-                padding: 20px;
-            }
-
-            .main-title {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            .news-item {
-                padding: 20px;
-            }
-
-            .news-title {
-                font-size: 1.2em;
-            }
+            background-color: #3b82f6;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <h1 class="main-title">AI创新与教育科技日报</h1>
-            <p class="subtitle">AI教育与创意技术前沿动态 | 2025.07.21</p>
-        </header>
+<body class="max-w-4xl mx-auto px-4 py-8">
+    <header class="mb-12 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">北京市养老保险缴费年限政策详解（2025-2039）</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">全面解读北京市养老保险缴费年限要求、过渡期安排及养老金计算规则</p>
+    </header>
 
-        <section class="news-section">
-            <h2>AI视频与创意技术</h2>
-            
-            <article class="news-item" style="border: 2px solid var(--accent-1); background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(236, 72, 153, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/19783" class="card-link" aria-label="LTX-Video模型更新"></a>
-                <h3 class="news-title">
-                    突破性进展！LTX-Video模型支持60秒高清视频生成，打破行业8秒限制
-                </h3>
-                <div class="news-content">
-                    Lightricks开源AI视频模型LTX-Video迎来重大升级，支持60秒长视频生成，打破行业8秒限制。该模型采用自回归流式架构，实现从图像到高清视频(最高1216×704分辨率)的实时生成，首秒内容瞬时呈现。新增动态场景控制功能，允许实时调整姿势、深度等元素，支持多种生成模式。130亿参数模型在消费级GPU上高效运行，60秒视频仅需数秒生成。
+    <div class="grid gap-8">
+        <!-- 当前最低缴费年限 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-calendar-check text-blue-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">当前最低缴费年限（截至2029年）</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-video">视频生成</span>
-                    <span class="tag tag-ai">AI模型</span>
-                    <span class="tag tag-innovation">创新技术</span>
+                <div class="highlight-box bg-blue-50 rounded-lg p-6 mb-6">
+                    <p class="text-lg font-semibold text-blue-800 mb-2">累计缴费满15年</p>
+                    <p class="text-gray-700">根据《社会保险法》规定，参保人员达到法定退休年龄时，<span class="font-semibold">累计缴费（含实际缴费年限和视同缴费年限）满15年</span>，即可按月领取基本养老金。</p>
                 </div>
-            </article>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="fas fa-check text-blue-600 text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-gray-700"><span class="font-semibold">累计而非连续</span>：允许中途断缴，只要退休前累计满15年即可。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="fas fa-check text-blue-600 text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-gray-700"><span class="font-semibold">视同缴费年限</span>：包括国家承认的工龄（如1992年养老保险制度实施前的国企工作年限）。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="fas fa-check text-blue-600 text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-gray-700"><span class="font-semibold">在职职工必须继续缴费</span>：即使已满15年，只要在职，单位和个人仍需依法缴纳社保直至退休。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19789" class="card-link" aria-label="LTX-Video 13B"></a>
-                <h3 class="news-title">
-                    LTX-Video 13B发布！30倍速生成高清视频，开源AI让创作无界限
-                </h3>
-                <div class="news-content">
-                    Lightricks发布开源视频生成模型LTX-Video13B，采用130亿参数和多尺度渲染技术，实现30倍于同类模型的生成速度。该模型在消费级GPU上流畅运行，支持1216×704分辨率实时生成，提供文本/图像/视频到视频的多种创作模式。其创新技术显著提升视频连贯性和细节表现，支持关键帧控制、风格替换等精细操作。
+        <!-- 2030年起最低缴费年限逐步提高 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-chart-line text-purple-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">2030年起最低缴费年限逐步提高（延迟退休改革）</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-video">视频创作</span>
-                    <span class="tag tag-tech">开源技术</span>
-                    <span class="tag tag-design">创意工具</span>
+                <p class="text-gray-700 mb-6">根据渐进式延迟退休政策，从<span class="font-semibold">2030年起，领取养老金的最低缴费年限将逐步提升至20年</span>，具体过渡期安排如下：</p>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden mb-6">
+                        <thead class="bg-purple-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left font-semibold text-purple-800">退休年份</th>
+                                <th class="py-3 px-4 text-left font-semibold text-purple-800">最低缴费年限要求</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4">2030年</td>
+                                <td class="py-3 px-4 font-medium">15年 + 6个月（累计15.5年）</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4">2032年</td>
+                                <td class="py-3 px-4 font-medium">16年 + 6个月（累计16.5年）</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">2037年</td>
+                                <td class="py-3 px-4 font-medium">19年</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4 font-semibold">2039年及以后</td>
+                                <td class="py-3 px-4 font-semibold text-purple-600">满20年</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </article>
+                
+                <div class="bg-purple-50 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-info-circle text-purple-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-purple-800">政策调整将分阶段实施，确保参保人员有充足时间适应变化。建议提前规划缴费年限，避免影响退休待遇。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19813" class="card-link" aria-label="FotographerAI ZenCtrl"></a>
-                <h3 class="news-title">
-                    FotographerAI发布ZenCtrl：单图像多场景生成技术，无需微调实现高保真创作
-                </h3>
-                <div class="news-content">
-                    FotographerAI推出革命性图像生成框架ZenCtrl，通过GenAI技术实现单图输入即可生成多视角、多场景的高保真图像。该框架突破性地解决了传统图像生成的三大痛点：无需微调、保持主体一致性、支持细粒度控制。其模块化工具包整合预处理到后处理全流程，基于OminiControl优化升级，特别强化了主体保留能力。
+        <!-- 缴费不足15年的处理方式 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-exclamation-triangle text-amber-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">缴费不足15年的处理方式</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-art">图像生成</span>
-                    <span class="tag tag-design">创意设计</span>
-                    <span class="tag tag-ai">AI框架</span>
+                <p class="text-gray-700 mb-6">若退休时缴费不满15年，可按以下方式处理：</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-hourglass-half text-amber-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800">延长缴费</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-amber-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-amber-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">北京户籍</span>：可申请延缴至满15年。</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-amber-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-amber-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">非京户籍</span>：需同时满足：
+                                        <ul class="list-disc list-inside mt-1 ml-4 text-gray-600">
+                                            <li>在京建立养老保险"一般账户"（男性50周岁前、女性40周岁前在京参保）</li>
+                                            <li>在京累计缴费满10年</li>
+                                            <li>北京为最后一个缴费满10年的地区</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-exchange-alt text-green-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800">转入城乡居民养老保险</h3>
+                        </div>
+                        <p class="text-gray-700">符合条件者可申请转入，按居民养老政策领取待遇。</p>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center mr-3">
+                                <i class="fas fa-hand-holding-usd text-red-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-800">一次性退保</h3>
+                        </div>
+                        <p class="text-gray-700">仅限特殊情况（如出国定居），可退还个人账户储存额。</p>
+                    </div>
                 </div>
-            </article>
+            </div>
+        </div>
 
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19796" class="card-link" aria-label="Stability AI SPAR3D"></a>
-                <h3 class="news-title">
-                    Stability AI发布0.7秒单图像实时重建模型SPAR3D，颠覆3D创作流程
-                </h3>
-                <div class="news-content">
-                    Stability-AI推出革命性3D重建模型SPAR3D，仅需0.7秒即可完成单图像3D重建。该模型创新性地结合了基于回归和生成式建模两种技术路线，通过点采样和网格化两阶段架构：首阶段使用点扩散模型生成带RGB信息的点云，第二阶段通过三平面Transformer预测几何形状和纹理。该模型已开源，为3D重建领域带来突破性进展。
+        <!-- 缴费年限对养老金的影响 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-chart-pie text-emerald-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">缴费年限对养老金的影响</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-design">3D设计</span>
-                    <span class="tag tag-tech">实时重建</span>
-                    <span class="tag tag-innovation">创新技术</span>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-emerald-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-emerald-800 mb-3">多缴多得，长缴多得</h3>
+                        <p class="text-gray-700 mb-4">缴费年限越长、基数越高，养老金水平越高。</p>
+                        <div class="bg-white rounded-lg p-4 shadow-sm">
+                            <p class="text-sm text-gray-600 mb-2">按北京平均工资缴费示例：</p>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700">缴15年</span>
+                                <span class="font-semibold text-emerald-600">约2600元/月</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">缴30年</span>
+                                <span class="font-semibold text-emerald-600">可达5600元/月</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-3">挂钩调整机制</h3>
+                        <p class="text-gray-700">养老金年度调整时，缴费年限每满1年每月增加1.8元（2025年标准），体现长缴优势。</p>
+                        <div class="mt-4 bg-white rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-calculator text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">示例：缴费25年</p>
+                                    <p class="font-semibold text-blue-600">每月增加45元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </article>
-        </section>
+            </div>
+        </div>
 
-        <section class="news-section">
-            <h2>AI教育与学习创新</h2>
-            
-            <article class="news-item" style="border: 2px solid var(--accent-2); background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(6, 182, 212, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/19816" class="card-link" aria-label="Baby Grok儿童AI"></a>
-                <h3 class="news-title">
-                    马斯克新创意！儿童AI应用"Baby Grok"即将上线，重塑未来教育模式
-                </h3>
-                <div class="news-content">
-                    马斯克旗下xAI公司宣布开发儿童AI应用"Baby Grok"，主打友好数字环境。该应用将提供教育性、娱乐性内容，确保儿童在线安全。虽未公布具体功能，但预计将整合聊天机器人、游戏等互动形式。这是科技公司布局儿童AI市场的又一尝试，或将重塑未来教育模式。目前产品细节有限，但已引发家长对AI教育应用的期待。
+        <!-- 其他关键政策要点 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-key text-indigo-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">其他关键政策要点</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-edu">儿童教育</span>
-                    <span class="tag tag-ai">AI应用</span>
-                    <span class="tag tag-service">教育服务</span>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-user-clock text-indigo-500 mr-2"></i>
+                            退休年龄要求（2025年标准）
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-indigo-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">男性</span>：60周岁</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-indigo-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">女性</span>：
+                                        <ul class="list-disc list-inside mt-1 ml-4 text-gray-600">
+                                            <li>干部/技术岗55周岁</li>
+                                            <li>工人岗50周岁</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-indigo-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">灵活就业人员</span>：女性50周岁、男性60周岁</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-heartbeat text-indigo-500 mr-2"></i>
+                            医保缴费年限
+                        </h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-indigo-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">职工医保</span>：男缴满25年、女缴满20年，退休后免缴享终身医保</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <div class="w-4 h-4 rounded-full bg-indigo-100 flex items-center justify-center">
+                                        <i class="fas fa-circle text-indigo-500 text-xs"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-2">
+                                    <p class="text-gray-700"><span class="font-medium">居民医保</span>：需终身缴费，无退休免缴待遇</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </article>
+            </div>
+        </div>
 
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19817" class="card-link" aria-label="WordPecker语言学习"></a>
-                <h3 class="news-title">
-                    开源版多邻国！WordPecker：AI语音对话+个性化词汇，3倍速学语言
-                </h3>
-                <div class="news-content">
-                    WordPecker是一款创新的开源语言学习工具，通过AI技术实现个性化学习体验。它支持从任意内容提取词汇创建个性化词库，提供100多种语言学习选项，并采用"知/不知"交互模式强化记忆。最大亮点是集成OpenAI语音Agent技术，支持实时语音对话练习和多国口音发音训练。工具提供多样化学习模式，包括互动测验、阅读练习和视觉辅助功能。
+        <!-- 总结 -->
+        <div class="card bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center mb-6">
+                    <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center mr-4">
+                        <i class="fas fa-gem text-rose-600"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">政策要点总结</h2>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-edu">语言学习</span>
-                    <span class="tag tag-audio">语音技术</span>
-                    <span class="tag tag-tech">开源工具</span>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-rose-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left font-semibold text-rose-800">情形</th>
+                                <th class="py-3 px-4 text-left font-semibold text-rose-800">缴费年限要求</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4">2029年及以前退休</td>
+                                <td class="py-3 px-4 font-medium">满15年</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="py-3 px-4">2030–2038年退休</td>
+                                <td class="py-3 px-4 font-medium">15.5–19年（逐步递增）</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-semibold">2039年及以后退休</td>
+                                <td class="py-3 px-4 font-semibold text-rose-600">满20年</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19780" class="card-link" aria-label="Lovable AI编码平台"></a>
-                <h3 class="news-title">
-                    瑞典初创公司Lovable：让非技术人员通过自然语言创建应用，8个月跻身独角兽行列
-                </h3>
-                <div class="news-content">
-                    瑞典AI编码平台Lovable在8个月内完成2亿美元A轮融资，估值达18亿美元，成为欧洲新晋独角兽。该平台让用户通过自然语言创建网站和应用程序，已拥有230万活跃用户（18万付费用户），年收入7500万美元。平台特别受非技术人员欢迎，已创建超1000万个项目，有案例显示企业客户48小时内创收300万美元。
+                
+                <div class="mt-6 bg-gray-50 rounded-lg p-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 mt-1">
+                            <i class="fas fa-lightbulb text-gray-500"></i>
+                        </div>
+                        <div class="ml-3">
+                            <p class="text-gray-700"><span class="font-semibold">重要提示：</span>在职人员无论是否满15年均需持续缴费，而灵活就业人员缴费满15年后可自愿选择是否继续缴纳。建议根据个人退休计划预留足够缴费年限。</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="tags-container">
-                    <span class="tag tag-edu">编程教育</span>
-                    <span class="tag tag-tech">低代码平台</span>
-                    <span class="tag tag-innovation">创业融资</span>
+                
+                <div class="mt-6 flex flex-col sm:flex-row items-center justify-between bg-blue-50 rounded-lg p-6">
+                    <div class="mb-4 sm:mb-0">
+                        <p class="text-blue-800 font-medium">查询实际缴费记录：</p>
+                    </div>
+                    <a href="http://fuwu.rsj.beijing.gov.cn/" target="_blank" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        北京社保网上服务平台
+                    </a>
                 </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI设计与创意应用</h2>
-            
-            <article class="news-item" style="border: 2px solid var(--accent-1); background: linear-gradient(135deg, rgba(236, 72, 153, 0.05) 0%, rgba(236, 72, 153, 0.01) 100%);">
-                <a href="https://www.aibase.com/zh/news/19808" class="card-link" aria-label="ComfyUI-Copilot"></a>
-                <h3 class="news-title">
-                    告别繁琐搭建！ComfyUI-Copilot让AI工作流一键生成，解锁60,000+模型的创意潜能
-                </h3>
-                <div class="news-content">
-                    阿里巴巴开发的ComfyUI-Copilot是一款基于大语言模型的开源插件，通过自然语言交互大幅简化AI艺术创作流程。该工具内置7,000节点、62,000模型和9,000工作流的知识库，支持自动生成工作流、智能推荐节点和参数优化。自2025年2月开源以来，已吸引19,000用户，处理85,000次查询，工作流接受率达85.9%。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-design">AI艺术</span>
-                    <span class="tag tag-tech">工作流工具</span>
-                    <span class="tag tag-art">创意辅助</span>
-                </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19774" class="card-link" aria-label="Suno音乐生成"></a>
-                <h3 class="news-title">
-                    Suno发布v4.5+：推出人声替换功能，AI音乐创作迈向新高度
-                </h3>
-                <div class="news-content">
-                    Suno AI音乐生成模型推出V4.5+版本，带来三大核心功能：1）"Add Vocals"人声替换功能，可将伴奏升级为完整歌曲；2）"Add Instrumentals"功能，支持将人声片段自动生成伴奏；3）"Inspire"功能，可从播放列表获取灵感创作新曲。新版本优化了音质和混音效果，歌曲时长限制提升至8分钟，并增强了提示助手功能。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-audio">音乐生成</span>
-                    <span class="tag tag-art">创意音频</span>
-                    <span class="tag tag-design">音乐设计</span>
-                </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19772" class="card-link" aria-label="Steam AI游戏"></a>
-                <h3 class="news-title">
-                    Steam平台AI游戏数量飙升800%：生成式AI深度渗透游戏设计与开发
-                </h3>
-                <div class="news-content">
-                    Steam平台AI游戏数量激增800%，目前已有近8000款游戏披露使用生成式AI技术，占总游戏库7%。这一数字较一年前不足1000款呈现爆发式增长，2025年新游戏中AI应用占比达20%。尽管Steam仅要求自愿披露，实际使用AI的游戏可能更多。这表明生成式AI正快速渗透游戏开发领域，将在内容创作、角色设计等方面发挥更大作用。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-design">游戏设计</span>
-                    <span class="tag tag-ai">生成式AI</span>
-                    <span class="tag tag-innovation">行业趋势</span>
-                </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI语音与交互技术</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19775" class="card-link" aria-label="NVIDIA语音识别"></a>
-                <h3 class="news-title">
-                    5.63%错误率创历史新低：NVIDIA推出商用级超高速语音识别模型Canary-Qwen-2.5B
-                </h3>
-                <div class="news-content">
-                    NVIDIA发布突破性混合模型Canary-Qwen-2.5B，以5.63%词错率创Hugging Face OpenASR纪录。该模型采用CC-BY许可，支持商业应用，统一语音识别与语言处理功能。核心创新在于FastConformer编码器与Qwen3-1.7B LLM解码器的混合架构，仅25亿参数却实现高效处理。支持多种NVIDIA GPU硬件，适用于云推理和边缘计算。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-audio">语音识别</span>
-                    <span class="tag tag-tech">混合模型</span>
-                    <span class="tag tag-performance">性能突破</span>
-                </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19791" class="card-link" aria-label="ChatGPT录音模式"></a>
-                <h3 class="news-title">
-                    ChatGPT录音模式上线！一键转录会议、生成计划，AI助力效率飙升
-                </h3>
-                <div class="news-content">
-                    OpenAI向ChatGPT Plus用户全面开放macOS桌面应用的录音功能，支持120分钟实时录音并智能生成结构化笔记、行动项和代码框架。该功能强调隐私保护，原始音频处理后即删除，但需用户确保录制合规性。目前仅限macOS，未来或扩展至其他平台。这一功能极大提升了会议记录、头脑风暴等场景的工作效率，是AI生产力工具的重要突破。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-audio">语音转录</span>
-                    <span class="tag tag-ai">AI助手</span>
-                    <span class="tag tag-service">生产力工具</span>
-                </div>
-            </article>
-        </section>
-
-        <section class="news-section">
-            <h2>AI技术前沿突破</h2>
-            
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19812" class="card-link" aria-label="开源大模型架构"></a>
-                <h3 class="news-title">
-                    从Llama 3.2到Kimi-K2：一文看透2025年开源大模型架构的巅峰对决
-                </h3>
-                <div class="news-content">
-                    2025年开源大模型呈现三大趋势：1）MOE架构成为主流，DeepSeek-V3（6710亿参数）与Qwen3-235B（2350亿参数）在专家系统设计上各具特色；2）中小模型突破性能瓶颈，SmoLLM3-3B采用无位置编码技术，Qwen3-4B实现轻量高效；3）模型差异化明显，Llama3.2侧重通用任务，Kimi-K2（1万亿参数）在复杂推理表现突出。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-ai">大模型架构</span>
-                    <span class="tag tag-tech">开源技术</span>
-                    <span class="tag tag-innovation">技术趋势</span>
-                </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19799" class="card-link" aria-label="CrewAI框架"></a>
-                <h3 class="news-title">
-                    GitHub获34000颗星！开源AI协作智能体CrewAI引领开发者潮流
-                </h3>
-                <div class="news-content">
-                    CrewAI开源AI框架在GitHub获3.4万星，成为开发者热门选择。该Python框架包含Crews和Flows两大核心模块：Crews实现多智能体协作，模拟企业团队分工；Flows专注事件驱动任务管理，支持工作流编排。框架采用四层架构（Crew、AI Agent、Process、Tasks），具备角色定义、工具定制和智能协作特性。目前已有超10万开发者通过认证，形成活跃的开源社区。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-tech">协作框架</span>
-                    <span class="tag tag-ai">智能体</span>
-                    <span class="tag tag-innovation">开源生态</span>
-                </div>
-            </article>
-
-            <article class="news-item">
-                <a href="https://www.aibase.com/zh/news/19773" class="card-link" aria-label="ART框架"></a>
-                <h3 class="news-title">
-                    ART框架发布！用Python一键训练AI Agent，邮件搜索到游戏操控全能搞定
-                </h3>
-                <div class="news-content">
-                    开源强化学习框架ART正式发布，为AI Agent训练带来新突破。该框架集成GRPO技术，支持Python开发者便捷训练多步骤任务Agent，如邮件搜索和游戏操控。特点包括：1)支持Qwen2.5-7B等小型模型；2)客户端-服务器分离架构简化部署；3)与主流平台集成提供训练监控。应用场景涵盖邮件自动化、游戏AI开发和多Agent协作。
-                </div>
-                <div class="tags-container">
-                    <span class="tag tag-tech">强化学习</span>
-                    <span class="tag tag-ai">Agent训练</span>
-                    <span class="tag tag-innovation">开发工具</span>
-                </div>
-            </article>
-        </section>
-
-        <div class="note">
-            注：本日报精选2025年7月21日AI领域重要进展，特别聚焦AI创意技术、教育应用与前沿突破，为您提供AI创新领域的最新动态。所有信息均来源于AIbase官方发布的最新资讯。
+            </div>
         </div>
     </div>
 
+    <footer class="mt-12 pt-6 border-t border-gray-200 text-center text-gray-500 text-sm">
+        <p>网页由问小白生成，仅供参考</p>
+        <p class="mt-1">最后更新时间为2025-08-03，星期日</p>
+        <p class="mt-1">问小白网址：wenxiaobai.com</p>
+    </footer>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const newsItems = document.querySelectorAll('.news-item');
-            
-            newsItems.forEach(item => {
-                const link = item.querySelector('.card-link');
-                if (link) {
-                    const url = link.getAttribute('href');
-                    
-                    item.addEventListener('click', function(e) {
-                        if (e.target.classList.contains('tag')) {
-                            e.stopPropagation();
-                            return;
-                        }
-                        
-                        window.open(url, '_blank');
-                    });
-                    
-                    item.style.cursor = 'pointer';
-                }
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 卡片悬停效果
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 25px -5px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
             });
         });
     </script>
